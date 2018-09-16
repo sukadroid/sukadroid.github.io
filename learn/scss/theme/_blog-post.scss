@@ -1,0 +1,41 @@
+.blog-post{
+    background: $white;
+    display: block;
+    position: relative;
+    @include border-radius($border-radius-base);
+    overflow: hidden;
+    border: 1px solid $gray-lighter;
+
+    .blog-post-body{
+        display: block;
+        position: relative;
+        padding: 20px;
+        .blog-post-date{
+            color: $gray-light;
+        }
+        .blog-post-excerpt{
+            color: $gray!important;
+        }
+    }
+    .blog-post-footer{
+        display: block;
+        position: relative;
+        a{
+            padding: 15px 20px;
+            display: block;
+            background: $brand-primary;
+            color: $white;
+            @include transition(all,0.5s,ease);
+            i{
+                @include transition(all,0.5s,ease);
+            }
+            &:hover{
+                text-decoration: none;
+                background: darken($brand-primary, 10%);
+                i{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

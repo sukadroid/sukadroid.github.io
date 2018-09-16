@@ -1,0 +1,10 @@
+/* =============================================
+ * Image Background 
+ * 
+ * @type WebRock Object
+ * ============================================= */
+.imagebackground {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0; }

@@ -1,0 +1,25 @@
+.footer-bar{
+    .footer-bar-social li a{
+        display: block;
+        color: $text-white;
+        &:hover{
+            color: $gray-dark;
+        }
+    }
+}
+
+
+.tag{
+    margin: 0 5px 5px 0;
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    color: $gray-light;
+    border: 1px solid $gray-light;
+    @include transition(all, 0.5s, ease);
+    &:hover{
+        background: $gray-light;
+        color: $text-white;
+        text-decoration: none;
+    }
+}

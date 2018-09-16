@@ -1,0 +1,40 @@
+/* =============================================
+ * Bootstrap
+ *
+ * @override bootstrap classes
+ * ============================================= */
+.btn {
+    @include transition(all, 0.5s, ease);
+}
+
+.open > .dropdown-menu {
+    @include box-shadow(0, 0, 0, transparent);
+    @include animation(0, 0.5s, fadeInDown);
+    padding: 0;
+    li {
+        margin: 0;
+        a {
+            @include transition(background, 0.3s, ease);
+            padding: 10px 20px;
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.page-header {
+    margin-bottom: 50px;
+    padding: 0;
+    i {
+        @include border-radius-separate($border-radius-base, $border-radius-base, 0, 0);
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: $gray-light;
+        border: 1px solid $gray-lighter;
+        margin-right: 10px;
+        margin-bottom: -1px;
+    }
+}

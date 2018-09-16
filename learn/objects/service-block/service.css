@@ -1,0 +1,131 @@
+/* =============================================
+ * Services  
+ * 
+ * @type WebRock Object
+ * ============================================= */
+.service {
+  padding: 20px;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .service .service-icon, .service .service-title {
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .service .service-description {
+    font-size: 12px;
+    min-height: 42px; }
+  .service .service-link {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    /* Service Hover 
+    ************************/ }
+    .service .service-link:hover {
+      text-decoration: none; }
+    .service .service-link i {
+      margin-left: 5px; }
+  .service.service-transparent {
+    background: transparent; }
+    .service.service-transparent .service-description {
+      color: #897f79; }
+    .service.service-transparent:hover {
+      background: rgba(255, 255, 255, 0.4); }
+      .service.service-transparent:hover .service-icon {
+        color: #90360a; }
+      .service.service-transparent:hover .service-title {
+        color: #90360a; }
+  .service.service-default {
+    background: #fff; }
+    .service.service-default .service-title, .service.service-default .service-icon {
+      color: #272321; }
+    .service.service-default .service-description {
+      color: #897f79; }
+    .service.service-default:hover {
+      background: #f2f2f2; }
+      .service.service-default:hover .service-icon {
+        color: #90360a; }
+      .service.service-default:hover .service-title {
+        color: #90360a; }
+  .service.service-inverse {
+    background: #272321; }
+    .service.service-inverse .service-title, .service.service-inverse .service-icon {
+      color: #fff; }
+    .service.service-inverse .service-description {
+      color: #ddd4ce; }
+    .service.service-inverse:hover {
+      background: #191715; }
+      .service.service-inverse:hover .service-icon {
+        color: #90360a; }
+      .service.service-inverse:hover .service-title {
+        color: #90360a; }
+  .service.service-1 {
+    padding: 40px 20px;
+    text-align: center; }
+  .service.service-2 {
+    padding: 40px 20px;
+    text-align: left; }
+  .service.service-3 {
+    padding: 40px 20px;
+    text-align: right; }
+  .service.service-4 {
+    padding: 20px; }
+    .service.service-4 .service-icon {
+      position: absolute;
+      margin-top: 10px;
+      width: 60px;
+      text-align: center; }
+    .service.service-4 .service-title, .service.service-4 .service-description, .service.service-4 .service-link {
+      padding-left: 65px; }
+  .service.service-5 {
+    padding: 20px; }
+    .service.service-5 .service-icon {
+      position: absolute;
+      right: 0;
+      margin-top: 10px;
+      width: 60px;
+      text-align: center; }
+    .service.service-5 .service-title, .service.service-5 .service-description, .service.service-5 .service-link {
+      padding-right: 65px; }
+  .service.service-6 {
+    padding: 20px; }
+    .service.service-6 .service-icon, .service.service-6 .service-title {
+      display: inline-block; }
+    .service.service-6 .service-icon {
+      margin-right: 5px; }
+  .service.service-border-1 {
+    border: 5px solid transparent; }
+    .service.service-border-1:hover {
+      border: 5px solid #90360a; }
+  .service.service-border-2 {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent; }
+    .service.service-border-2:hover {
+      border-top: 5px solid #90360a;
+      border-bottom: 5px solid #90360a; }
+  .service.service-border-3 {
+    border-top: 5px solid transparent; }
+    .service.service-border-3:hover {
+      border-top: 5px solid #90360a; }
+  .service.service-border-4 {
+    border-bottom: 5px solid transparent; }
+    .service.service-border-4:hover {
+      border-bottom: 5px solid #90360a; }
+  .service.service-border-5 {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent; }
+    .service.service-border-5:hover {
+      border-left: 5px solid #90360a;
+      border-right: 5px solid #90360a; }
+  .service.service-border-6 {
+    border-left: 5px solid transparent; }
+    .service.service-border-6:hover {
+      border-left: 5px solid #90360a; }
+  .service.service-border-7 {
+    border-right: 5px solid transparent; }
+    .service.service-border-7:hover {
+      border-right: 5px solid #90360a; }

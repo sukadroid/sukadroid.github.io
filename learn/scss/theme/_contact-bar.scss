@@ -1,0 +1,76 @@
+/* =============================================
+ * Contact Bar
+ *
+ * @bootstrap contact-bar
+ * ============================================= */
+.contact-bar {
+    background: $contact-bar-bg;
+
+    .contact-bar-list {
+        font-size: 12px;
+        margin-bottom: 0;
+        > li {
+            color: $gray;
+
+            .contact-bar-item-label{
+                color: $gray;
+            }
+
+            > a {
+                display: block;
+                padding: 12px 5px;
+                line-height: 12px;
+                color: $gray-light;
+                @include transition(all, 0.3s, ease);
+                &:hover {
+                    text-decoration: none;
+                    color: $gray-lighter;
+                }
+
+                &.contact-bar-profile {
+                    padding: 10px 15px;
+                    display: block;
+                    .contact-bar-profile-img {
+                        margin-right: 6px;
+                    }
+                    i {
+                        margin-left: 6px;
+                    }
+                    &:hover {
+                        background: $gray;
+                    }
+                }
+            }
+
+            &.open {
+                a.contact-bar-profile {
+                    color: $brand-primary;
+                    background: $gray;
+                }
+            }
+        }
+    }
+}
+
+.navbar-inverse{
+    .contact-bar {
+        background: $contact-bar-inverse-bg;
+
+        .contact-bar-list {
+            > li {
+                color: $gray;
+
+                .contact-bar-item-label {
+                    color: $gray;
+                }
+
+                > a {
+                    color: lighten($gray, 10%);
+                    &:hover {
+                        color: lighten($gray-light, 10%);
+                    }
+                }
+            }
+        }
+    }
+}

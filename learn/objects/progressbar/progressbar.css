@@ -1,0 +1,11 @@
+/* =============================================
+ * Navbar 
+ * 
+ * @type WebRock Object
+ * ============================================= */
+.progress.progress-bar-medium{
+    height: 10px
+}
+.progress.progress-bar-slim{
+    height: 5px
+}

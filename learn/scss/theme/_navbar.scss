@@ -1,0 +1,329 @@
+/* =============================================
+ * Navbar
+ *
+ * @bootstrap navbar
+ * ============================================= */
+.navbar {
+    margin: 0;
+    min-height: 120px;
+
+    @include border-radius(0);
+
+    @include transition(all, 0.7s, ease);
+
+    @media screen and (max-width: $screen-xs-max) {
+        min-height: 80px;
+    }
+
+    .container {
+        @include transition(all, 0.7s, ease);
+        position: relative;
+        display: block;
+
+        .navbar-brand, .navbar-nav {
+            position: relative;
+            display: block;
+        }
+    }
+
+    /* ===
+     * Navbar Centered
+     * === */
+    &.navbar-centered {
+        .navbar-header {
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+            .navbar-brand {
+                position: relative;
+                margin: 0 auto;
+                width: 100%;
+                height: 75px;
+            }
+        }
+        .navbar-collapse {
+            text-align: center;
+            .navbar-nav {
+                display: inline-block !important;
+                float: none;
+                position: relative;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    /* ===
+     * Navbar Contained
+     * === */
+    &.navbar-contained {
+        margin: 20px auto;
+        background: transparent;
+        border: none;
+
+        .contact-bar {
+
+            background: transparent;
+            > .container {
+                background: $gray-dark;
+            }
+        }
+
+        &.navbar-inverse .contact-bar {
+            background: transparent;
+            > .container {
+                background: $gray-darker;
+            }
+        }
+
+        > .container {
+            padding: 0 20px;
+            position: relative;
+            display: block;
+
+            .navbar-brand, .navbar-nav {
+                position: relative;
+                display: block;
+            }
+        }
+        &.navbar-default {
+            > .container {
+                background: $navbar-default-bg;
+            }
+        }
+        &.navbar-inverse {
+            > .container {
+                background: $navbar-inverse-bg;
+            }
+        }
+
+        min-height: 90px;
+
+        .navbar-brand {
+            display: block;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            .navbar-brand-image {
+                display: block;
+                position: relative;
+                img {
+                    position: relative;
+                    height: 40px;
+                }
+            }
+        }
+
+        .navbar-nav > li {
+            padding-top: 27px;
+            padding-bottom: 27px;
+            > a {
+                height: 36px;
+                line-height: 40px;
+            }
+        }
+    }
+
+    /* ===
+     * Navbar Overlay
+     * === */
+    &.navbar-overlay {
+        background: transparent;
+        border: 0;
+
+        &.navbar-contained.navbar-default {
+            .container {
+                background: transparent;
+            }
+        }
+        &.navbar-contained.navbar-inverse {
+            .container {
+                background: transparent;
+            }
+        }
+
+        &.navbar-inverse-overlay {
+            .navbar-nav {
+                > li > a {
+                    color: $white;
+                    &.active {
+                        color: $brand-primary;
+                    }
+                }
+            }
+        }
+
+        &.navbar-default-overlay {
+            .navbar-nav {
+                > li > a {
+                    color: $gray-dark;
+                    &.active {
+                        color: $brand-primary;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ===
+     * Navbar Hidden Text
+     * === */
+    &.navbar-brand-hide-text {
+        .navbar-brand {
+            .navbar-brand-text {
+                text-indent: -10000px;
+            }
+        }
+    }
+
+    /* ===
+     * Navbar Brand
+     * === */
+    .navbar-brand {
+        position: absolute;
+        height: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        img {
+            height: 40px;
+        }
+
+        @include transition(all, 0.7s, ease);
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+        .navbar-brand {
+            padding-top: 22px;
+            padding-bottom: 22px;
+            img {
+                height: 36px;
+            }
+        }
+    }
+
+    .navbar-brand-text {
+    }
+    .navbar-brand-image {
+    }
+
+    .navbar-brand img, .navbar-nav > li > a, .navbar-toggle {
+        @include transition(all, 0.5s, ease);
+    }
+
+    /* ===
+     * Navbar Condesned
+     * === */
+    &.navbar-condensed {
+        min-height: 80px;
+
+        .navbar-brand {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            img {
+                height: 40px;
+            }
+        }
+
+        .navbar-nav > li {
+            padding-top: 22px;
+            padding-bottom: 22px;
+            > a {
+                height: 36px;
+                line-height: 40px;
+            }
+        }
+
+        &.navbar-centered {
+            min-height: 60px;
+
+            .navbar-brand {
+                height: 60px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                img {
+                    height: 36px;
+                }
+            }
+
+            .navbar-nav > li {
+                padding-top: 14px;
+                padding-bottom: 14px;
+                > a {
+                    height: 36px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+
+    /* ===
+     * Navbar List Items
+     * === */
+    .navbar-nav > li {
+        padding-top: 42px;
+        padding-bottom: 42px;
+        margin: 0 10px;
+        font-size: 12px;
+
+        @include transition(all, 0.7s, ease);
+
+        @media screen and (max-width: $screen-sm-max) {
+            margin: 0 5px;
+        }
+
+        &.active > a {
+            color: $brand-primary;
+            border: 1px solid $brand-primary;
+
+            &:hover {
+                color: $white;
+                background: $brand-primary;
+            }
+        }
+
+        &.open > a, &.open > a:focus {
+
+            color: $white;
+            background: $brand-primary;
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        > a {
+            @include border-radius($border-radius-base);
+
+            padding: 0 25px;
+            height: 36px;
+            line-height: 40px;
+        }
+    }
+
+    .navbar-nav {
+        > li > a {
+            @include transition(all, 0.5s, ease);
+        }
+    }
+
+    /* ===
+     * Navbar Toggle
+     * === */
+    .navbar-toggle {
+        margin: 20px 15px 20px 0;
+    }
+
+    .navbar-collapse.collapse.in {
+        .navbar-nav {
+            width: 100%;
+            li {
+                width: 100%;
+                a {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}

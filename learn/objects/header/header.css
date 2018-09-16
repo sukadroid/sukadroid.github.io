@@ -1,0 +1,73 @@
+/* =============================================
+ * Header 
+ * 
+ * @type WebRock Object
+ * ============================================= */
+.header {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0; }
+  .header.header-default h1, .header.header-default h2, .header.header-default h3, .header.header-default h4, .header.header-default h5, .header.header-default h6 {
+    color: #272321; }
+    .header.header-default p {
+      color: #58514e; }
+  .header.header-inverse h1, .header.header-inverse h2, .header.header-inverse h3, .header.header-inverse h4, .header.header-inverse h5, .header.header-inverse h6 {
+    color: #fff; }
+    .header.header-inverse p {
+      color: #ddd4ce; }
+  .header.header-xlg {
+    padding: 250px 0; }
+    @media screen and (max-width: 1199px) {
+  .header.header-xlg {
+    padding: 208.33333px 0; } }
+    @media screen and (max-width: 991px) {
+  .header.header-xlg {
+    padding: 166.66667px 0; } }
+    @media screen and (max-width: 767px) {
+  .header.header-xlg {
+    padding: 125px 0; } }
+  .header.header-lg {
+    padding: 200px 0; }
+    @media screen and (max-width: 1199px) {
+  .header.header-lg {
+    padding: 166.66667px 0; } }
+    @media screen and (max-width: 991px) {
+  .header.header-lg {
+    padding: 133.33333px 0; } }
+    @media screen and (max-width: 767px) {
+  .header.header-lg {
+    padding: 100px 0; } }
+  .header.header-md {
+    padding: 150px 0; }
+    @media screen and (max-width: 1199px) {
+  .header.header-md {
+    padding: 125px 0; } }
+    @media screen and (max-width: 991px) {
+  .header.header-md {
+    padding: 100px 0; } }
+    @media screen and (max-width: 767px) {
+  .header.header-md {
+    padding: 75px 0; } }
+  .header.header-sm {
+    padding: 100px 0; }
+    @media screen and (max-width: 1199px) {
+  .header.header-sm {
+    padding: 83.33333px 0; } }
+    @media screen and (max-width: 991px) {
+  .header.header-sm {
+    padding: 66.66667px 0; } }
+    @media screen and (max-width: 767px) {
+  .header.header-sm {
+    padding: 50px 0; } }
+  .header.header-xs {
+    padding: 50px 0; }
+    @media screen and (max-width: 1199px) {
+  .header.header-xs {
+    padding: 41.66667px 0; } }
+    @media screen and (max-width: 991px) {
+  .header.header-xs {
+    padding: 33.33333px 0; } }
+    @media screen and (max-width: 767px) {
+  .header.header-xs {
+    padding: 25px 0; } }

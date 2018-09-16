@@ -1,0 +1,231 @@
+/* =============================================
+ * Headings
+ * ============================================= */
+
+.heading {
+  position: relative;
+  margin-bottom: $margin-class/2;
+
+  &.heading-sm {
+    font-size: $font-size-base * 4;
+  }
+  &.heading-md {
+    font-size: $font-size-base * 5.5;
+  }
+  &.heading-lg {
+    font-size: $font-size-base * 7;
+  }
+
+  @media screen and (max-width: $screen-md-max) {
+    &.heading-sm {
+      font-size: $font-size-base * 3;
+    }
+    &.heading-md {
+      font-size: $font-size-base * 4.5;
+    }
+    &.heading-lg {
+      font-size: $font-size-base * 6.25;
+    }
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    &.heading-sm {
+      font-size: $font-size-base * 2.25;
+    }
+    &.heading-md {
+      font-size: $font-size-base * 4;
+    }
+    &.heading-lg {
+      font-size: $font-size-base * 5;
+    }
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    &.heading-sm {
+      font-size: $font-size-base * 1.5;
+    }
+    &.heading-md {
+      font-size: $font-size-base * 3.5;
+    }
+    &.heading-lg {
+      font-size: $font-size-base * 4;
+    }
+  }
+
+  /* ===
+   * Heading 1
+   * === */
+  &.heading-1 {
+    &:before, &:after {
+      content: "\f005";
+      font-family: FontAwesome;
+      position: relative;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      font-size: 24px;
+      margin: -0 30px;
+      top: -5px;
+    }
+
+    &.text-heading-bold {
+      &:before, &:after {
+        top: -10px;
+      }
+    }
+  }
+
+  /* ===
+   * Heading 2
+   * === */
+  &.heading-2 {
+    &:before, &:after {
+      content: " ";
+      position: absolute;
+      width: 50px;
+      height: 5px;
+      border-top: 1px solid $gray-dark;
+      border-bottom: 1px solid $gray-dark;
+    }
+    &:before {
+      margin: 5px 0 0 -60px;
+    }
+    &:after {
+      margin: 5px 0 0 10px;
+    }
+  }
+
+  &.heading-2.heading-sm {
+    &:before, &:after {
+      height: 10px;
+    }
+    &:before {
+      margin: 20px 0 0 -60px;
+    }
+    &:after {
+      margin: 20px 0 0 10px;
+    }
+
+    &.text-heading-bold, &.text-heading-stylish {
+      &:before {
+        margin: 25px 0 0 -60px;
+      }
+      &:after {
+        margin: 25px 0 0 10px;
+      }
+    }
+  }
+  &.heading-2.heading-md {
+    &:before, &:after {
+      height: 12px;
+    }
+    &:before {
+      margin: 25px 0 0 -60px;
+    }
+    &:after {
+      margin: 25px 0 0 10px;
+    }
+
+    &.text-heading-bold, &.text-heading-stylish {
+      &:before {
+        margin: 30px 0 0 -60px;
+      }
+      &:after {
+        margin: 30px 0 0 10px;
+      }
+    }
+  }
+  &.heading-2.heading-lg {
+    &:before, &:after {
+      height: 15px;
+    }
+    &:before {
+      margin: 35px 0 0 -60px;
+    }
+    &:after {
+      margin: 35px 0 0 10px;
+    }
+
+    &.text-heading-bold, &.text-heading-stylish {
+      &:before {
+        margin: 42px 0 0 -60px;
+      }
+      &:after {
+        margin: 42px 0 0 10px;
+      }
+    }
+  }
+
+  /* ===
+   * Heading 3
+   * === */
+  &.heading-3 {
+    padding: 10px 20px;
+    border: 2px solid $gray-dark;
+    @include border-radius($border-radius-base);
+
+  }
+
+  /* ===
+  * Heading 4
+  * === */
+  &.heading-4 {
+    padding: 5px 0;
+    border-top: 2px solid $gray-dark;
+    border-bottom: 2px solid $gray-dark;
+  }
+
+  /* ===
+  * Heading 5
+  * === */
+  &.heading-5 {
+    padding: 5px 0;
+    border-bottom: 2px solid $gray-dark;
+  }
+
+  /* ===
+  * Heading 6
+  * === */
+  &.heading-6 {
+    text-shadow: 3px 3px 0px $gray-lighter, 10px 10px 0px $brand-primary;
+  }
+
+  /* ===
+  * Heading 7
+  * === */
+  &.heading-7 {
+    -webkit-transform: rotate(-10deg) skew(-10deg, 0);
+    -moz-transform: rotate(-10deg) skew(-10deg, 0);
+    -ms-transform: rotate(-10deg) skew(-10deg, 0);
+    -o-transform: rotate(-10deg) skew(-10deg, 0);
+    transform: rotate(-10deg) skew(-10deg, 0);
+  }
+
+}
+
+.header-inverse {
+  .heading.heading-2 {
+    &:before, &:after {
+      border-top: 1px solid $white;
+      border-bottom: 1px solid $white;
+    }
+  }
+
+  .heading.heading-3 {
+    border: 2px solid $white;
+  }
+
+  .heading.heading-4 {
+    border-top: 2px solid $white;
+    border-bottom: 2px solid $white;
+  }
+
+  .heading.heading-5 {
+    border-bottom: 2px solid $white;
+  }
+}
+
+.text-white .heading{
+    color: $white;
+    border-color: $white;
+}

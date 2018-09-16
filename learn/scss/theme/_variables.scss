@@ -1,0 +1,78 @@
+// =============================================
+// Grozav Variables
+// ============================================= 
+
+// @override bootstrap variables
+
+// Font Size
+$font-size-xs: 12px !default;
+$font-size-base: 14px !default;
+$font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+// Grays
+$gray-base: #000;
+$gray-darker: lighten($gray-base, 13.5%) !default;
+$gray-dark: lighten($gray-base, 20%) !default;
+$gray: lighten($gray-base, 33.5%) !default;
+$gray-light: lighten($gray-base, 46.7%) !default;
+$gray-lighter: lighten($gray-base, 93.5%) !default;
+
+$white: #fff !default;
+
+// Brand Colors
+$brand-primary: darken(#428bca, 6.5%) !default;
+$brand-success: #5cb85c !default;
+$brand-info: #5bc0de !default;
+$brand-warning: #f0ad4e !default;
+$brand-danger: #d9534f !default;
+
+// Btn Default
+$btn-default-color: #333 !default;
+$btn-default-bg: #fff !default;
+$btn-default-border: #ccc !default;
+
+// Body Background
+$body-bg: #fff;
+
+// Padding
+$padding-base-vertical: 14px !default;
+$padding-base-horizontal: 14px !default;
+
+$padding-large-vertical: 18px !default;
+$padding-large-horizontal: 18px !default;
+
+$padding-small-vertical: 12px !default;
+$padding-small-horizontal: 12px !default;
+
+$padding-xs-vertical: 7px !default;
+$padding-xs-horizontal: 7px !default;
+
+// White text
+$text-white: #fdfdfd !default;
+
+$margin-class: 25px !default;
+$padding-class: 25px !default;
+
+// Navbar
+$navbar-height: 120px;
+
+$navbar-default-bg: $white;
+$navbar-default-color: $gray-dark;
+$navbar-default-link-color: $gray-dark;
+$navbar-default-link-hover-color: $white;
+$navbar-default-link-hover-bg: $brand-primary;
+$navbar-default-link-active-bg: transparent;
+
+$navbar-inverse-bg: $gray-dark;
+$navbar-inverse-color: $white;
+$navbar-inverse-link-color: $white;
+$navbar-inverse-link-hover-color: $white;
+$navbar-inverse-link-hover-bg: $brand-primary;
+$navbar-inverse-link-active-bg: transparent;
+
+$contact-bar-bg: $gray-dark;
+$contact-bar-inverse-bg: $gray-darker;
+
+
+// @import variables
+@import "../bootstrap/variables";
